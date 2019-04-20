@@ -1,0 +1,251 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calender</title>
+
+
+
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .item1 {
+            grid-area: Howdy;
+        }
+
+        .item2 {
+            grid-area: Friday;
+        }
+
+        .item3 {
+            grid-area: 16;
+        }
+
+        .item4 {
+            grid-area: APR;
+        }
+
+        .item5 {
+            grid-area: 2019;
+        }
+
+        .item1 {
+            vertical-align: text-top;
+            font-size: .75rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        item2 {
+            vertical-align: text-bottom;
+            font-size: 2.25rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        item3 {
+            vertical-align: middle;
+            font-size: 6rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        item4 {
+            vertical-align: text-bottom;
+            font-size: .75rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        item5 {
+            vertical-align: text-top;
+            font-size: .75rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .background {
+            background: linear-gradient(to bottom right, #C1EE9D 0%, #528f92 80%);
+        }
+
+        .container {
+            display: -webkit-flex;
+            display: flex;
+            height: 50%;
+            padding: 0px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'Howdy Howdy'
+                'Howdy Howdy'
+                'Friday Friday'
+                'Friday Friday'
+                '16 APR'
+                '16 2019';
+            grid-gap: 10px;
+            background-color: #198eb8;
+            margin: 25% 55% 25% 25%;
+        }
+
+        .calender {
+            margin: 25% 25% 25% 45%;
+            padding: 0px;
+
+        }
+
+        .grid-container>div {
+            background-color: #198eb8;
+        }
+
+
+        .days {
+            height: 40px;
+            margin: 0 5px;
+            width: 40px;
+            line-height: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+        }
+
+
+
+
+        .container div {
+            /* -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1; */
+
+            box-shadow: 10px -10px 0 rgba(0, 0, 0, 0.08);
+            display: inline-block;
+        }
+
+        container div:nth-of-type(1) {
+            -webkit-flex-grow: 1;
+        }
+
+        .container div:nth-of-type(2) {
+            -webkit-flex-grow: 3;
+        }
+
+        .shade:hover {
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .light {
+            font-weight: 200;
+        }
+
+        .shade:active {
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+        }
+
+        .nav li {
+
+            display: inline-block;
+            height: 40px;
+            margin: 0 5px;
+            width: 40px;
+            line-height: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+
+            <div class="grid-container">
+                <div class="item1">Howdy</div>
+                <div class="item2">Friday</div>
+                <div class="item3">16</div>
+                <div class="item4">
+                    <i class="arrow left" class="shade"></i>
+                    APR
+                    <i class="arrow right" class="shade"></i>
+                </div>
+                <div class="item5">
+                    <i class="arrow left" class="shade"></i>
+                    2019
+                    <i class="arrow right" class="shade"></i>
+
+                </div>
+            </div>
+            <div class="calender" style="background-color:white">
+                <ul class="nav">
+                    <li class="days">SUN</li>
+                    <li class="days">MON</li>
+                    <li class="days">TUE</li>
+                    <li class="days">WED</li>
+                    <li class="days">THU</li>
+                    <li class="days">FRI</li>
+                    <li class="days">SAT</li>
+
+                </ul>
+                <ul class="nav">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+
+                </ul>
+                <ul class="nav">
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+
+                </ul>
+                <ul class="nav">
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+
+                </ul>
+                <ul class="nav">
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+
+                </ul>
+                <ul class="nav">
+                    <li>29</li>
+                    <li>30</li>
+                    <li class="light">1</li>
+                    <li class="light">2</li>
+                    <li class="light">3</li>
+                    <li class="light">4</li>
+                    <li class="light">5</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
